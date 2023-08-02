@@ -1,0 +1,272 @@
+
+body {
+    display: block;
+    background-color: white;
+    margin: 0px;
+}
+
+
+header {
+    display: flex;
+    background-color: black;
+    width: 100%;    
+    justify-content: center;
+}
+
+.head-container {
+    background-color: black;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    color: #F1D4D4;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Tektur', cursive;
+    color: #fff;
+    text-shadow:
+    0 0 21px #fff,
+    0 0 42px #F9D8D8,
+    0 0 82px #E97979,
+    0 0 92px #62274C,
+    0 0 102px #572344,
+    0 0 151px #F9D8D8;
+    white-space: nowrap;
+    
+}
+
+.navbar {
+    align-self: flex-end;
+    width: fit-content;
+}
+
+
+
+main {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+
+
+
+
+form div{
+    display: flex;
+    width: 400px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label, input {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+select{
+    font-family: 'Courier New', Courier, monospace;
+    height: 30px;
+    
+}
+
+
+#message {
+    height: 100px;
+    width: 100%;
+}
+
+#submit {
+    height: 40px;
+    width: 100px;
+    margin-top: 20px;
+    background-color: black;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#submit:hover, #reset:hover {
+    background-color: #F1D4D4;
+    color: #572344;
+}
+
+#reset {
+    background-color:#E97979;
+    color: black;
+}
+
+#breadcrumb {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    font-family: 'Courier New', Courier, monospace;
+    align-self: flex-start;
+}
+
+
+
+footer {
+    background-color: black;
+    margin-bottom: 0px;
+    height: 200px;
+    margin-top: 200px;
+}
+
+#logo {
+    width: 200px;
+    
+}
+
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+.navbar li {
+    font-family: 'Recursive', sans-serif;
+    margin: 10px 12px;
+    color: #F1D4D4;
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+}
+
+footer li {
+    font-family: 'Recursive', sans-serif;
+    color: #F1D4D4;
+    margin: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+}
+
+.menu, .menu-icon {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .navbar ul {
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+        position: relative;
+
+    }
+
+    form div{
+        display: flex;
+        flex-direction: row;
+        width: 300px;
+    }
+    #name, #phone, #email {
+        width: 100%;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .menu:checked ~.navbar {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        position: fixed;
+        right: 0px;
+        top: 100px;
+        background-color: hsla(0, 0%, 0%, 0.8);
+        height: auto;
+        
+    }
+
+    .menu-icon {
+        display: flex;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        color: #F9D8D8;
+        cursor: pointer;
+    }
+
+    
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    footer li {
+        margin: 20px 0px;
+        color: #F1D4D4;
+        
+    }
+
+    footer {
+        height: auto;
+    }
+
+
+    .head-container {
+        width: 100%;
+    }
+
+    #logo {
+        width: 90px;
+    }
+
+    
+    header h1 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 992px) { 
+    .head-container {
+        width: 100%;
+        
+    }
+
+    .head-container h1 {
+        margin: 40px;
+    }
+    
+    footer li {
+        font-family: 'Recursive', sans-serif;
+       
+        color: #F1D4D4;
+        margin: 20px;
+    }
+}
